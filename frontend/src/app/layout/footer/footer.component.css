@@ -1,0 +1,12 @@
+.footer{
+   
+    position: sticky;
+    bottom: 0;
+    height: 60px;
+    background-color: #E5E5E5;
+    
+}
+.footer p {
+    font-size: 0.8rem;
+    padding: 5px 60px;
+}
