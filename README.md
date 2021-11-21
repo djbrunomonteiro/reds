@@ -1,2 +1,2 @@
-# reds
-Projeto SPA desenvolvido para iDev
+# REDS
+Projeto SPA em Angular desenvolvido para  iDev empresa junior de SC.
