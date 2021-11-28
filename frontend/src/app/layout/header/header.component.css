@@ -32,8 +32,88 @@
 @media (max-width: 810px) {
 
     .header {
-        display: none;  
+        display: flex;
+        align-items: center;
         height: 100px;
+        justify-content: space-between;   
+        
+    }
+    
+    .logo {
+
+        margin: 10px 10px 0px 10px;
+        
+    }
+    .menu{
+        margin-right: 10px;
+    }
+    .menu a{
+        display: inline;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+    }
+    a > img{
+        width: 250px;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        display: block;
+        align-items: center;
+        height: 100px;
+        justify-content: space-between; 
+        padding: 10px;
+         
+        
+    }
+    
+    .logo {
+        
+        margin: 10px 10px 0px 10px;
+        
+    }
+    .menu{
+        margin-right: px;
+    }
+    .menu a{
+        display: inline;
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+        margin-left: 5px;
+        font-size: 0.47rem;
+        text-transform: uppercase;
+    }
+    a > img{
+        
+        width: 350px;
+        
+    }
+
+    
+}
+@media (max-width: 360px) {
+
+  
+    .menu a{
+        display: inline;
+        color: black;
+        text-decoration: none;
+        padding: 5px;
+        margin-left: 5px;
+        font-size: 0.4rem;
+        text-transform: uppercase;
+    }
+    a > img{
+        
+        width: 300px;
         
     }
 

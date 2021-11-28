@@ -2,7 +2,7 @@
    
     position: sticky;
     bottom: 0px;
-    height: 60px;
+    min-height: 70px;
     background-color: #E5E5E5;
     z-index: 20;
     
@@ -10,4 +10,24 @@
 .footer p {
     font-size: 0.8rem;
     padding: 5px 60px;
+}
+@media (max-width: 810px){
+    .footer{
+   
+        position: sticky;
+        bottom: 0px;
+       
+        background-color: #E5E5E5;
+        z-index: 20;
+        
+    }
+    .footer p {
+        font-size: 0.8rem;
+        padding: 5px 30px;
+    }
+    
+}
+@media (max-width: 600px){
+  
+    
 }

@@ -17,3 +17,26 @@ a{
     color: black;
     text-decoration: none;
 }
+
+@media (max-width: 810px) {
+
+    .btndowncontainer{
+        position: absolute;
+        top: 850px 
+    }
+    
+
+  
+}
+
+@media (max-width: 600px) {
+
+    .btndowncontainer{
+        position: absolute;
+        top: 800px
+    }
+   img{
+       height: 250px;
+   }
+  
+}
