@@ -1,9 +1,10 @@
 .footer{
    
     position: sticky;
-    bottom: 0;
+    bottom: 0px;
     height: 60px;
     background-color: #E5E5E5;
+    z-index: 20;
     
 }
 .footer p {

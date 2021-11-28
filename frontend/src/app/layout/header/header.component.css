@@ -2,14 +2,13 @@
     display: flex;
     align-items: center;
     height: 100px;
-    justify-content: space-between;
-    
-
+    justify-content: space-between;   
     
 }
 
 .logo {
-    margin: 60px 20px 0px 60px;
+   
+    margin: 60px 10px 0px 60px;
     
 }
 .menu{
@@ -18,11 +17,26 @@
 .menu a{
     color: black;
     text-decoration: none;
-    padding: 30px;
+    padding: 15px;
     font-size: 1rem;
     text-transform: uppercase;
 }
 .menu a:hover{
     text-decoration: underline 2px #FEDA49;
+}
+.menu a.linkAtivo{
+    text-decoration: underline 2px #FEDA49;
+    
+}
+
+@media (max-width: 810px) {
+
+    .header {
+        display: none;  
+        height: 100px;
+        
+    }
+
+    
 }
 

@@ -1,0 +1,9 @@
+.disable{
+    /* opacity: 0.3; */
+    filter: grayscale(50%);
+}
+.btnnext{
+    position: absolute;
+    top: 370px;
+    right: 10px;
+}

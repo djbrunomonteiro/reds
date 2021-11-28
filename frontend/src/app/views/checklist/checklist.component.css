@@ -1,0 +1,19 @@
+.btndowncontainer{
+    position: absolute;
+    top: 350px;
+}
+.btndowncontainer:hover{
+    background-color: black;
+    border-radius: 15px;
+    
+}
+.btndown{
+    font-size: 65px;
+}
+.btndown:hover{
+    color: blanchedalmond;
+}
+a{
+    color: black;
+    text-decoration: none;
+}

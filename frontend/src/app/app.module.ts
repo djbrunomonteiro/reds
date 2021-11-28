@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -11,6 +12,7 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { UtilizarComponent } from './views/utilizar/utilizar.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { UtilizarComponent } from './views/utilizar/utilizar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

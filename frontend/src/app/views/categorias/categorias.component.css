@@ -1,0 +1,55 @@
+
+.title-content{
+    display: flex;
+}
+
+.pedagogicostyle{
+    text-decoration: underline 2px #FEDA49;
+}
+
+.bpedagogico{
+    
+    color: #FEDA49;
+}
+
+.culturastyle{
+    text-decoration: underline 2px #61C2D0;
+}
+
+.bcultura{
+
+    color: #61C2D0;
+}
+
+.designstyle{
+    text-decoration: underline 2px #94C11F;
+}
+
+.bdesign{
+    
+    color: #94C11F;
+}
+
+.traducaostyle{
+    text-decoration: underline 2px #F28900;
+}
+
+.btraducao{
+    
+    
+    color: #F28900;
+}
+
+.midiastyle{
+    text-decoration: underline 2px #D06F9B;
+}
+
+.bmidia{
+  
+    color: #D06F9B;
+}
+
+.bullet{
+    font-size: 25px;
+}
+

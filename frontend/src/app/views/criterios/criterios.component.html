@@ -1,64 +1,207 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col container-principal">
-      <img src="../../../assets/imagens/image 1.png" alt="" />
+    <div
+      *ngIf="!ativadoCategorias; else blockCategorias"
+      class="col container-principal">
+    
+      <div class="video-container">
+        <video  src="../../../assets/videos/crit_vd_intro.mp4" width="320" height="240" controls muted  autoplay loop></video>
+      </div>
+
       <p>
         O modelo contempla 32 critérios de avaliação, que são explicados e
-        exempliﬁcados no checklist de avaliação proposto. Podem ser utilizados
+        exemplificados no checklist de avaliação proposto. Podem ser utilizados
         na íntegra ou parcialmente, de acordo com o contexto de avaliação.
+      </p>
+      <p>
         Ainda, conforme o avanço da tecnologia e dos recursos disponíveis nos
         REDs, novos critérios podem ser adicionados.
       </p>
       <p>
-        Nas próximas páginas, você pode ver detalhadamente cada categoria e seus
-        critérios.
+        No modelo, você pode clicar na categoria que quiser e poderá conhecer
+        cada critério proposto detalhadamente.
       </p>
     </div>
+
+    <ng-template #blockCategorias>
+      <div class="col container-principal" >
+        <div class="video-container">
+          <video src="../../../assets/videos/{{video}}.mp4" width="320" height="240"  controls muted autoplay loop></video>
+        </div>
+       <div *ngFor=" let texto of textos">
+         
+         <h5 *ngIf="texto.title">{{texto.title}}</h5>
+         <h6 [ngClass]="{'pedagogicostyle': btnpedagogico,
+         'culturastyle': btncultura, 'designstyle': btndesign,
+         'traducaostyle': btntraducao, 'midiastyle': btnmidia}" *ngIf="texto.subtitle1">{{texto.subtitle1}}</h6>
+        
+         
+         
+         <ul >
+           <li [ngClass]="{'bpedagogico': btnpedagogico,
+           'bcultura': btncultura, 'bdesign': btndesign,
+           'btraducao': btntraducao, 'bmidia': btnmidia}"
+            *ngIf="texto.item1"><span class="textp"> {{texto.item1}} </span> </li>
+           <li [ngClass]="{'bpedagogico': btnpedagogico,
+           'bcultura': btncultura, 'bdesign': btndesign,
+           'btraducao': btntraducao, 'bmidia': btnmidia}" 
+           *ngIf="texto.item2"><span class="textp"> {{texto.item2}} </span></li>
+
+           <li [ngClass]="{'bpedagogico': btnpedagogico,
+           'bcultura': btncultura, 'bdesign': btndesign,
+           'btraducao': btntraducao, 'bmidia': btnmidia}"
+           *ngIf="texto.item3"><span class="textp"> {{texto.item3}} </span></li>
+
+           <li [ngClass]="{'bpedagogico': btnpedagogico,
+           'bcultura': btncultura, 'bdesign': btndesign,
+           'btraducao': btntraducao, 'bmidia': btnmidia}" 
+           *ngIf="texto.item4"><span class="textp"> {{texto.item4}} </span></li>
+
+         </ul>
+         
+         
+         <h6 [ngClass]="{'pedagogicostyle': btnpedagogico,
+         'culturastyle': btncultura, 'designstyle': btndesign,
+         'traducaostyle': btntraducao, 'midiastyle': btnmidia}" *ngIf="texto.subtitle2">{{texto.subtitle2}}</h6>
+      
+         <ul>
+          <li [ngClass]="{'bpedagogico': btnpedagogico,
+          'bcultura': btncultura, 'bdesign': btndesign,
+          'btraducao': btntraducao, 'bmidia': btnmidia}"
+           *ngIf="texto.item5"><span class="textp"> {{texto.item5}} </span> </li>
+          <li [ngClass]="{'bpedagogico': btnpedagogico,
+          'bcultura': btncultura, 'bdesign': btndesign,
+          'btraducao': btntraducao, 'bmidia': btnmidia}" 
+          *ngIf="texto.item6"><span class="textp"> {{texto.item6}} </span></li>
+
+          <li [ngClass]="{'bpedagogico': btnpedagogico,
+          'bcultura': btncultura, 'bdesign': btndesign,
+          'btraducao': btntraducao, 'bmidia': btnmidia}"
+          *ngIf="texto.item7"><span class="textp"> {{texto.item7}} </span></li>
+
+          <li [ngClass]="{'bpedagogico': btnpedagogico,
+          'bcultura': btncultura, 'bdesign': btndesign,
+          'btraducao': btntraducao, 'bmidia': btnmidia}" 
+          *ngIf="texto.item8"><span class="textp"> {{texto.item8}} </span></li>
+         </ul>  
+        <h6 [ngClass]="{'pedagogicostyle': btnpedagogico,
+        'culturastyle': btncultura, 'designstyle': btndesign,
+        'traducaostyle': btntraducao, 'midiastyle': btnmidia}" *ngIf="texto.subtitle3">{{texto.subtitle3}}</h6>
+       
+        <ul>
+          <li [ngClass]="{'bpedagogico': btnpedagogico,
+          'bcultura': btncultura, 'bdesign': btndesign,
+          'btraducao': btntraducao, 'bmidia': btnmidia}"
+           *ngIf="texto.item9"><span class="textp"> {{texto.item9}} </span> </li>
+          <li [ngClass]="{'bpedagogico': btnpedagogico,
+          'bcultura': btncultura, 'bdesign': btndesign,
+          'btraducao': btntraducao, 'bmidia': btnmidia}" 
+          *ngIf="texto.item10"><span class="textp"> {{texto.item10}} </span></li>
+
+          <li [ngClass]="{'bpedagogico': btnpedagogico,
+          'bcultura': btncultura, 'bdesign': btndesign,
+          'btraducao': btntraducao, 'bmidia': btnmidia}"
+          *ngIf="texto.item11"><span class="textp"> {{texto.item11}} </span></li>
+
+          <li [ngClass]="{'bpedagogico': btnpedagogico,
+          'bcultura': btncultura, 'bdesign': btndesign,
+          'btraducao': btntraducao, 'bmidia': btnmidia}" 
+          *ngIf="texto.item12"><span class="textp"> {{texto.item12}} </span></li>
+        </ul>
+          
+        <button class="btn reload btn-reload" (click)="reloadBlock()">  <i class="bi bi-arrow-counterclockwise"> </i></button>
+       
+
+       </div>
+        
+      </div>
+    </ng-template>
+
     <div class="col-md-7 color buttons">
       <div class="row">
-          <div class="btns">
-              <button class="pushable">
-              <span class="shadow"></span>
-              <span class="edge btn1"></span>
-              <span class="front btn1 text-btn"> CONTEXTO PEDAGÓGICO </span>
-            </button>
-            <button class="pushable">
-                <span class="shadow"></span>
-                <span class="edge btn2"></span>
-                <span class="front btn2 text-btn"> CULTURA SURDA </span>
-              </button>
+        <div class="btns">
+          <button class="pushable" (click)="mudaCategoria('pedagogico')">
+            <span class="shadow"></span>
+            <span class="edge btn1"></span>
+            <span class="front btn1 text-btn">
+              <img
+              [ngClass]="btnpedagogico ? 'ativo' : 'desativado'"
+                class="img-btn"
+                src="../../../assets/imagens/btn-ctx-pedag.png"
+                alt="botao contexto pedagogico"
+            /></span>
+          </button>
+          <button class="pushable" (click)="mudaCategoria('cultura')">
+            <span class="shadow"></span>
+            <span class="edge btn2"></span>
+            <span class="front btn2 text-btn">
+              <img
+              [ngClass]="btncultura ? 'ativo' : 'desativado'"
+                class="img-btn"
+                src="../../../assets/imagens/btn-cult-surd.png"
+                alt="botao cultura surda"
+              />
+            </span>
+          </button>
+        </div>
+        <div class="btns btns-2">
+          <button class="pushable bt3" (click)="mudaCategoria('design')">
+            <span class="shadow"></span>
+            <span class="edge btn3"></span>
+            <span class="front btn3 text-btn">
+              <img
+              [ngClass]="btndesign ? 'ativo' : 'desativado'"
+                class="img-btn"
+                src="../../../assets/imagens/btn-design-int.png"
+                alt="botao cultura surda"
+              />
+            </span>
+          </button>
+          <div class="imgMeio">
+            <img src="../../../assets/imagens/img-prop.png" alt="" />
           </div>
-          <div class="btns btns-2 ">
-              <button class="pushable bt3">
-              <span class="shadow"></span>
-              <span class="edge btn3"></span>
-              <span class="front btn3 text-btn"> DESIGN DA INTERFACE </span>
-            </button>
-            <div class="imgMeio">
-                <img src="../../../assets/imagens/Group 1.png" alt="">
-            </div>
-            <button class="pushable">
-                <span class="shadow"></span>
-                <span class="edge btn4"></span>
-                <span class="front btn4 text-btn"> TRADUÇÃO E INTERPRETAÇÃO </span>
-              </button>
-          </div>
-          <div class="btns">
-              <button class="pushable bt5" >
-              <span class="shadow"></span>
-              <span class="edge btn5"></span>
-              <span class="front btn5 text-btn"> MÍDIAS DIGITAIS </span>
-            </button>
-  
-            
-            
-          </div>
-
+          <button class="pushable" (click)="mudaCategoria('traducao')">
+            <span class="shadow"></span>
+            <span class="edge btn4"></span>
+            <span class="front btn4 text-btn">
+              <img
+              [ngClass]="btntraducao ? 'ativo' : 'desativado'"
+                class="img-btn"
+                src="../../../assets/imagens/btn-trad-int.png"
+                alt="botao cultura surda"
+              />
+            </span>
+          </button>
+        </div>
+        <div class="btns btn-5-content">
+          <button class="pushable bt5" (click)="mudaCategoria('midia')">
+            <span class="shadow"></span>
+            <span class="edge btn5"></span>
+            <span class="front btn5 text-btn">
+              <img
+              [ngClass]="btnmidia ? 'ativo' : 'desativado'"
+                class="img-btn"
+                src="../../../assets/imagens/btn-mid-dig.png"
+                alt="botao midias digitais"
+              />
+            </span>
+          </button>
+        </div>
       </div>
       <div class="imgbg">
-          <img src="../../../assets/imagens/Group 12.png" alt="">
+        <img src="../../../assets/imagens/bg-btns.png" alt="" />
       </div>
+    </div>
+  </div>
+</div>
 
-  </div>
-  </div>
+<div class="btnnext">
+  <button routerLink="/checklist" type="button" class="btn btn-lg">
+      <i class="bi bi-arrow-right"></i>
+  </button>
+</div>
+<div class="btnpreview">
+  <button routerLink="/categorias" type="button" class="btn btn-lg">
+      <i class="bi bi-arrow-left"></i>
+  </button>
 </div>

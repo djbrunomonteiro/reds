@@ -1,16 +1,20 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col container-principal">
-      <img src="../../../assets/imagens/image 1.png" alt="" />
+    <div *ngIf="!ativadoCategorias; else blockCategorias" class="col container-principal">
+      <div class="video-container">
+        <video  src="../../../assets/videos/cat_vd_intro.mp4" width="320" height="240" controls muted  autoplay loop></video>
+      </div>
+
+
       <p>
-        As categorias apresentam as áreas da avaliação presentes em REDs
+        As <strong> categorias</strong> apresentam as áreas da avaliação presentes em REDs
         bilíngues, contendo os critérios agrupados por semelhança. As categorias
         podem ser exploradas e utilizadas de maneira não linear, ou seja, a
         avaliação pode iniciar por qualquer uma delas ou até mesmo pode-se optar
         por utilizar apenas parte delas.
       </p>
       <p>
-        No modelo ao lado, você pode clicar na categoria que você quer utiliza e
+        No modelo ao lado, você pode <strong> clicar na categoria</strong> que você quer utiliza e
         saber mais informações. A categoria de cor amarelo, representa a área de
         avaliação pedagógica nos recursos; a azul avalia o contexto da cultura
         surda; a verde a área de design visual do RED, a laranja é utilizada
@@ -18,52 +22,86 @@
         o contexto das mídias digitais que formam o recurso.
       </p>
     </div>
-    <div class="col-md-7 color buttons">
-        <div class="row">
-            <div class="btns">
-                <button class="pushable">
-                <span class="shadow"></span>
-                <span class="edge btn1"></span>
-                <span class="front btn1 text-btn"> CONTEXTO PEDAGÓGICO </span>
-              </button>
-              <button class="pushable">
-                  <span class="shadow"></span>
-                  <span class="edge btn2"></span>
-                  <span class="front btn2 text-btn"> CULTURA SURDA </span>
-                </button>
-            </div>
-            <div class="btns btns-2 ">
-                <button class="pushable bt3">
-                <span class="shadow"></span>
-                <span class="edge btn3"></span>
-                <span class="front btn3 text-btn"> DESIGN DA INTERFACE </span>
-              </button>
-              <div class="imgMeio">
-                  <img src="../../../assets/imagens/Group 1.png" alt="">
-              </div>
-              <button class="pushable">
-                  <span class="shadow"></span>
-                  <span class="edge btn4"></span>
-                  <span class="front btn4 text-btn"> TRADUÇÃO E INTERPRETAÇÃO </span>
-                </button>
-            </div>
-            <div class="btns">
-                <button class="pushable bt5" >
-                <span class="shadow"></span>
-                <span class="edge btn5"></span>
-                <span class="front btn5 text-btn"> MÍDIAS DIGITAIS </span>
-              </button>
-    
-              
-              
-            </div>
 
+    <ng-template #blockCategorias>
+      <div  class="col container-principal">
+        <div class="video-container">
+          <video src="../../../assets/videos/{{video}}.mp4" width="320" height="240"  controls muted autoplay loop></video>
         </div>
-        <div class="imgbg">
-            <img src="../../../assets/imagens/Group 12.png" alt="">
+
+        <div class="title-content">
+            <span class="bullet"
+            [ngClass]="{'bpedagogico': btnpedagogico,
+            'bcultura': btncultura, 'bdesign': btndesign,
+            'btraducao': btntraducao, 'bmidia': btnmidia}"
+            >&#9679;</span>
+            <h4 
+            [ngClass]="{'pedagogicostyle': btnpedagogico,
+             'culturastyle': btncultura, 'designstyle': btndesign,
+             'traducaostyle': btntraducao, 'midiastyle': btnmidia}">  {{title}}</h4> 
         </div>
+        
+        
+        <p>{{text1}}</p>
+        <p>{{text2}}</p>
   
+      </div>
+   <button class="btn reload btn-reload" (click)="reloadBlock()">  <i class="bi bi-arrow-counterclockwise"> </i></button>
+
+    </ng-template>
+   
+    <div class="col-md-7 color buttons">
+      <div class="row">
+        <div class="btns">
+          <button class="pushable " (click)="mudaCategoria('pedagogico')">
+            <span class="shadow"></span>
+            <span class="edge btn1"></span>
+            <span class="front btn1 text-btn"> <img [ngClass]="btnpedagogico ? 'ativo' : 'desativado'"  class="img-btn" src="../../../assets/imagens/btn-ctx-pedag.png" alt="botao contexto pedagogico"></span>
+            
+          </button>
+          <button class="pushable" (click)="mudaCategoria('cultura')">
+            <span class="shadow"></span>
+            <span class="edge btn2"></span>
+            <span class="front btn2 text-btn"> <img [ngClass]="btncultura ? 'ativo' : 'desativado'" class="img-btn" src="../../../assets/imagens/btn-cult-surd.png" alt="botao cultura surda"> </span>
+          </button>
+        </div>
+        <div class="btns btns-2">
+          <button class="pushable bt3" (click)="mudaCategoria('design')">
+            <span class="shadow"></span>
+            <span class="edge btn3"></span>
+            <span class="front btn3 text-btn"> <img [ngClass]="btndesign ? 'ativo' : 'desativado'" class="img-btn" src="../../../assets/imagens/btn-design-int.png" alt="botao cultura surda"> </span>
+          </button>
+          <div class="imgMeio">
+            <img src="../../../assets/imagens/img-prop.png" alt="" />
+          </div>
+          <button class="pushable" (click)="mudaCategoria('traducao')">
+            <span class="shadow"></span>
+            <span class="edge btn4"></span>
+            <span class="front btn4 text-btn"> <img [ngClass]="btntraducao ? 'ativo' : 'desativado'" class="img-btn" src="../../../assets/imagens/btn-trad-int.png" alt="botao cultura surda"> </span>
+          </button>
+        </div>
+        <div class="btns btn-5-content">
+          <button class="pushable bt5" (click)="mudaCategoria('midia')">
+            <span class="shadow"></span>
+            <span class="edge btn5"></span>
+            <span class="front btn5 text-btn"> <img [ngClass]="btnmidia ? 'ativo' : 'desativado'" class="img-btn" src="../../../assets/imagens/btn-mid-dig.png" alt="botao cultura surda"> </span>
+          </button>
+        </div>
+      </div>
+      <div class="imgbg">
+        <img src="../../../assets/imagens/bg-btns.png" alt="" />
+      </div>
     </div>
-    
   </div>
+</div>
+
+<div class="btnnext">
+  <button routerLink="/criterios" type="button" class="btn btn-lg">
+      <i class="bi bi-arrow-right"></i>
+  </button>
+</div>
+<div class="btnpreview">
+  <button routerLink="/utilizar" type="button" class="btn btn-lg">
+      <i class="bi bi-arrow-left"></i>
+  </button>
 </div>

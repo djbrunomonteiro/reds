@@ -1,7 +1,17 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col container-principal">
-      <img src="../../../assets/imagens/image 1.png" alt="" />
+      <div class="video-container">
+        <video
+          src="../../../assets/videos/check_vd_intro.mp4"
+          width="320"
+          height="240"
+          controls
+          muted
+          autoplay
+          loop
+        ></video>
+      </div>
       <p>
         Para apoiar a realização da avaliação e a aplicação dos critérios, foi
         desenvolvido um checklist, que está disponível para download aqui. O
@@ -12,6 +22,26 @@
         aplica.
       </p>
     </div>
-    <div class="col-md-8 color"></div>
+    <div class="col-md-7 color">
+      <div class="row">
+        <div class="btns">
+          <img src="../../../assets/imagens/checkdown.png" alt="" />
+          <div class="btndowncontainer">
+            <button type="button" class="btn btn-lg">
+              <a href="../../../assets/pdfs/checklist.pdf" download="checklist">
+                <i class="bi bi-download btndown"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+
+<div class="btnpreview">
+  <button routerLink="/criterios" type="button" class="btn btn-lg">
+      <i class="bi bi-arrow-left"></i>
+  </button>
 </div>
