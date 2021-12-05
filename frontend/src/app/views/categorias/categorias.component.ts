@@ -47,7 +47,7 @@ export class CategoriasComponent implements OnInit {
         this.btncultura = false;
         this.btndesign = false;
         this.btnmidia = false;
-        this.video = 'cat_vd_pedagogico'
+        this.video = 'p5'
         break;
 
       case 'cultura':
@@ -60,7 +60,7 @@ export class CategoriasComponent implements OnInit {
         this.btncultura = true;
         this.btndesign = false;
         this.btnmidia = false;
-        this.video = 'cat_vd_cultura'
+        this.video = 'p6'
 
         break;
 
@@ -74,7 +74,7 @@ export class CategoriasComponent implements OnInit {
         this.btncultura = false;
         this.btndesign = true;
         this.btnmidia = false;
-        this.video = 'cat_vd_design'
+        this.video = 'p9'
         break;
 
       case 'traducao':
@@ -87,7 +87,7 @@ export class CategoriasComponent implements OnInit {
         this.btncultura = false;
         this.btndesign = false;
         this.btnmidia = false;
-        this.video = 'cat_vd_traducao'
+        this.video = 'p7'
         break;
 
       case 'midia':
@@ -100,7 +100,7 @@ export class CategoriasComponent implements OnInit {
         this.btncultura = false;
         this.btndesign = false;
         this.btnmidia = true;
-        this.video = 'cat_vd_midia'
+        this.video = 'p8'
 
         break;
 

@@ -4,9 +4,7 @@
     font-family: 'Roboto', sans-serif;
 }
 body{    
-    margin: 0px;
-    
-    
+    margin: 0px;   
 }
 h4{
   padding: 0px;
@@ -26,7 +24,6 @@ h5{
     padding-bottom: 60px;
     align-items: center;
     min-height: 77vh;
-
 }
 p{
     padding-top: 10px;
@@ -38,10 +35,8 @@ p{
     justify-content: center; 
     margin-top: 30px;
     align-items:baseline;
-   
-    
-    
 }
+
 .buttons button{
     margin: 0px 30px;
     
@@ -54,9 +49,6 @@ p{
     padding: 0px;
     
 }
-
-
-
 
 .pushable {
   position: relative;
@@ -186,8 +178,8 @@ p{
   
 }
 .video-container{
-
-  padding-bottom: 10px;
+  display: flex;    
+  justify-content: center;
 }
 .desativado{
   filter: grayscale(50%);
@@ -224,8 +216,6 @@ p{
   padding-bottom: 20px;
   
 }
-  
-  
 }
 
 @media (max-width: 600px) {
@@ -256,6 +246,4 @@ p{
   width: 100px;
 }
 
- 
-  
 }

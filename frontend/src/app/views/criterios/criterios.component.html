@@ -5,7 +5,7 @@
       class="col container-principal">
     
       <div class="video-container">
-        <video  src="../../../assets/videos/crit_vd_intro.mp4" width="320" height="240" controls muted  autoplay loop></video>
+        <video  src="../../../assets/videos/p10.mp4" width="420" controls muted  autoplay loop></video>
       </div>
 
       <p>
@@ -26,7 +26,7 @@
     <ng-template #blockCategorias>
       <div class="col container-principal" >
         <div class="video-container">
-          <video src="../../../assets/videos/{{video}}.mp4" width="320" height="240"  controls muted autoplay loop></video>
+          <video src="../../../assets/videos/{{video}}.mp4" width="420"  controls muted autoplay loop></video>
         </div>
        <div *ngFor=" let texto of textos">
          
@@ -109,9 +109,7 @@
           *ngIf="texto.item12"><span class="textp"> {{texto.item12}} </span></li>
         </ul>
           
-        <button class="btn reload btn-reload" (click)="reloadBlock()">  <i class="bi bi-arrow-counterclockwise"> </i></button>
-       
-
+        <button class="btn reload btn-reload" (click)="reloadBlock()">  <i class="bi bi-arrow-counterclockwise"> </i></button> 
        </div>
         
       </div>
