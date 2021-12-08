@@ -2,22 +2,16 @@
 .title-content{
     display: flex;
 }
-
 .pedagogicostyle{
     text-decoration: underline 2px #FEDA49;
 }
-
-.bpedagogico{
-    
+.bpedagogico{  
     color: #FEDA49;
 }
-
 .culturastyle{
     text-decoration: underline 2px #61C2D0;
 }
-
 .bcultura{
-
     color: #61C2D0;
 }
 
@@ -26,7 +20,6 @@
 }
 
 .bdesign{
-    
     color: #94C11F;
 }
 
@@ -35,8 +28,6 @@
 }
 
 .btraducao{
-    
-    
     color: #F28900;
 }
 
@@ -45,7 +36,6 @@
 }
 
 .bmidia{
-  
     color: #D06F9B;
 }
 
@@ -65,8 +55,6 @@ ul li::before {
     width: 0.5em; 
     margin-left: -1em; 
   }
-
-  
   .textp{
       color: black;
   }

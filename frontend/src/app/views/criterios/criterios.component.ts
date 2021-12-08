@@ -80,7 +80,7 @@ export class CriteriosComponent implements OnInit {
         this.btncultura = false;
         this.btndesign = false;
         this.btnmidia = false;
-        this.video = 'p14';
+        this.video = '11_crit_cont_pedag';
 
         break;
       
@@ -106,7 +106,7 @@ export class CriteriosComponent implements OnInit {
         this.btncultura = true;
         this.btndesign = false;
         this.btnmidia = false;
-        this.video = 'p12';
+        this.video = '12_crit_cult_surd';
 
         break;
       
@@ -132,7 +132,7 @@ export class CriteriosComponent implements OnInit {
         this.btncultura = false;
         this.btndesign = true;
         this.btnmidia = false;
-        this.video = 'p15';
+        this.video = '15_crit_desig_interf';
         break;
       
       case 'traducao':
@@ -157,7 +157,7 @@ export class CriteriosComponent implements OnInit {
         this.btncultura = false;
         this.btndesign = false;
         this.btnmidia = false;
-        this.video = 'p13';
+        this.video = '13_crit_tard_inter';
         break;
       
       case 'midia':
@@ -182,7 +182,7 @@ export class CriteriosComponent implements OnInit {
         this.btncultura = false;
         this.btndesign = false;
         this.btnmidia = true;
-        this.video = '';
+        this.video = '14_crit_mid_dig';
         break;
 
       default:

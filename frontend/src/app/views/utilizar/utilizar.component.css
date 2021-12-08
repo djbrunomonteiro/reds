@@ -1,69 +1,43 @@
-.disable{
-    /* opacity: 0.3; */
-    filter: grayscale(50%);
-}
-
 .setastop{
     position: absolute;
     top: 80px;
-    z-index: 11;
-    
-    
+    z-index: 11; 
 }
 .setaslateral{
     position: absolute;
     top: 385px;
     z-index: 11;
     width: 700px;
-    
-    
 }
 .setabottom{
     position: absolute;
     top: 680px;
-    z-index: 11;
-    
-    
+    z-index: 11; 
 }
 
 @media (max-width: 810px) {
     .setastop{
         top: 770px;
-  
     }
     .setaslateral{
         position: absolute;
         top: 1080px;
         z-index: 11;
         width: 700px;
-        
-        
     }
     .setabottom{
-
         top: 1380px;
-
-  
     }
- 
-  
 }
 
 @media (max-width: 600px) {
     .setastop{
        display: none;
-  
     }
     .setaslateral{
-        display: none;
-        
-        
+        display: none; 
     }
     .setabottom{
         display: none;
-
-  
     }
- 
-  
 }

@@ -1,41 +1,5 @@
-.btndowncontainer{
-    position: absolute;
-    top: 350px;
-}
-.btndowncontainer:hover{
-    background-color: black;
-    border-radius: 15px;
-    
-}
-.btndown{
-    font-size: 65px;
-}
-.btndown:hover{
-    color: blanchedalmond;
-}
-a{
-    color: black;
-    text-decoration: none;
-}
-
-@media (max-width: 810px) {
-
-    .btndowncontainer{
-        position: absolute;
-        top: 850px 
-    }
-    
-
-  
-}
-
 @media (max-width: 600px) {
-
-    .btndowncontainer{
-        position: absolute;
-        top: 800px
-    }
-   img{
+     img{
        height: 250px;
    }
   

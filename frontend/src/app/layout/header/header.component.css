@@ -3,13 +3,10 @@
     align-items: center;
     height: 100px;
     justify-content: space-between;   
-    
 }
 
 .logo {
-   
-    margin: 60px 10px 0px 60px;
-    
+    margin: 60px 10px 0px 60px; 
 }
 .menu{
     margin-right: 60px;
@@ -25,24 +22,21 @@
     text-decoration: underline 2px #FEDA49;
 }
 .menu a.linkAtivo{
-    text-decoration: underline 2px #FEDA49;
-    
+    text-decoration: underline 2px #FEDA49;   
+}
+.mobile{
+    display: none;
 }
 
 @media (max-width: 810px) {
-
     .header {
         display: flex;
         align-items: center;
         height: 100px;
-        justify-content: space-between;   
-        
-    }
-    
+        justify-content: space-between;          
+    }  
     .logo {
-
-        margin: 10px 10px 0px 10px;
-        
+        margin: 10px 10px 0px 10px; 
     }
     .menu{
         margin-right: 10px;
@@ -57,27 +51,31 @@
     }
     a > img{
         width: 250px;
-    }
-
-    
+    }    
 }
 
-@media (max-width: 600px) {
+@media (max-width: 915px) {
+    .mobile{
+        display: flex;  
+        z-index: 11;      
+        color: rgb(110, 66, 0);
+    }
+    .mobile  i {
+        font-size: 2rem;
+    }
+    .menu{
+        display: none;
+    }
 
     .header {
-        display: block;
+        display: flex;
         align-items: center;
-        height: 100px;
         justify-content: space-between; 
-        padding: 10px;
-         
-        
+        padding: 10px; 
     }
     
     .logo {
-        
-        margin: 10px 10px 0px 10px;
-        
+        margin: 10px 10px 0px 10px;  
     }
     .menu{
         margin-right: px;
@@ -92,16 +90,11 @@
         text-transform: uppercase;
     }
     a > img{
-        
-        width: 350px;
-        
+        width: 250px;
     }
 
-    
 }
 @media (max-width: 360px) {
-
-  
     .menu a{
         display: inline;
         color: black;
@@ -111,12 +104,31 @@
         font-size: 0.4rem;
         text-transform: uppercase;
     }
-    a > img{
-        
-        width: 300px;
-        
-    }
-
-    
 }
-
+  .containerMobile{
+      position: absolute;      
+      top: 0px;
+      right: 0px;
+      width: 250px;
+      min-height: 250px;
+      background-color: rgb(255, 255, 255);
+  }
+  .containerMobile a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 25px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: end;
+}
+.containerMobile a:hover{
+    text-decoration: underline 2px #FEDA49;
+}
+.containerMobile a.linkAtivo{
+    text-decoration: underline 2px #FEDA49; 
+}
+.exit{
+    text-align: end;
+}

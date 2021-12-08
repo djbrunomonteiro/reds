@@ -1,53 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap-icons/font/bootstrap-icons.css";
-*{
-    font-family: 'Roboto', sans-serif;
+* {
+  font-family: "Roboto", sans-serif;
 }
-body{    
-    margin: 0px;   
+body {
+  margin: 0px;
 }
-h4{
+h4 {
   padding: 0px;
   margin-top: 5px;
   margin-left: 5px;
 }
-h5{
+h5 {
   padding-bottom: 5px;
-  font-size:  1rem;
+  font-size: 1rem;
   font-weight: 900;
 }
-.container-principal{
-    margin-top: 20px;
-    /* padding: 60px 60px 20px; */
-    padding-left: 60px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    align-items: center;
-    min-height: 77vh;
+.container-principal {
+  margin-top: 20px;
+  /* padding: 60px 60px 20px; */
+  padding-left: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: center;
+  min-height: 77vh;
 }
-p{
-    padding-top: 10px;
-    text-align: justify;
-}
-
-.buttons{
-    display: flex;    
-    justify-content: center; 
-    margin-top: 30px;
-    align-items:baseline;
+p {
+  padding-top: 10px;
+  text-align: justify;
 }
 
-.buttons button{
-    margin: 0px 30px;
-    
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: baseline;
 }
 
-.btns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    
+.buttons button {
+  margin: 0px 30px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
 }
 
 .pushable {
@@ -69,10 +67,7 @@ p{
   background: hsl(0deg 0% 0% / 0.25);
   will-change: transform;
   transform: translateY(2px);
-  transition:
-    transform
-    600ms
-    cubic-bezier(.3, .7, .4, 1);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
 .edge {
   position: absolute;
@@ -81,7 +76,7 @@ p{
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border-top: solid 30px rgb(4, 0, 255) ;
+  border-top: solid 30px rgb(4, 0, 255);
   background: linear-gradient(
     to left,
     hsl(340deg 100% 16%) 0%,
@@ -100,10 +95,7 @@ p{
 
   will-change: transform;
   transform: translateY(-4px);
-  transition:
-    transform
-    600ms
-    cubic-bezier(.3, .7, .4, 1);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
 
 .pushable:hover {
@@ -111,10 +103,7 @@ p{
 }
 .pushable:hover .front {
   transform: translateY(-6px);
-  transition:
-    transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 .pushable:active .front {
   transform: translateY(-2px);
@@ -122,10 +111,7 @@ p{
 }
 .pushable:hover .shadow {
   transform: translateY(4px);
-  transition:
-    transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 .pushable:active .shadow {
   transform: translateY(1px);
@@ -134,116 +120,127 @@ p{
 .pushable:focus:not(:focus-visible) {
   outline: none;
 }
-.btn1{
-    background: hsl(48, 100%, 50%);
- 
+.btn1 {
+  background: hsl(48, 100%, 50%);
 }
-.btn2{
-    background: hsl(188, 54%, 60%);
+.btn2 {
+  background: hsl(188, 54%, 60%);
 }
-.btn3{
-    background: hsl(77, 72%, 44%);
+.btn3 {
+  background: hsl(77, 72%, 44%);
 }
-.btn4{
-    background: hsl(34, 100%, 47%);
+.btn4 {
+  background: hsl(34, 100%, 47%);
 }
-.btn5{
-  
-    background: hsl(333, 51%, 63%);
+.btn5 {
+  background: hsl(333, 51%, 63%);
 }
 
-.imgMeio{
-    margin-bottom: 60px;
+.imgMeio {
+  margin-bottom: 60px;
 }
 
-.imgbg{
-    margin-top: 50px;
-    position: absolute;
-    z-index: -1;
+.imgbg {
+  margin-top: 50px;
+  position: absolute;
+  z-index: -1;
 }
-.text-btn{
-    width: 160px;
-    height: 160px;
+.text-btn {
+  width: 160px;
+  height: 160px;
 }
-.img-btn{
+.img-btn {
   width: 170px;
   margin-top: 10px;
 }
-.btn-reload{
+.btn-reload {
   position: absolute;
   width: 50px;
   top: 172px;
   left: 10px;
   z-index: 10;
-  
 }
-.video-container{
-  display: flex;    
+.video-container {
+  display: flex;
   justify-content: center;
 }
-.desativado{
-  filter: grayscale(50%);
+.desativado {
+  filter: brightness(80%);
 }
-.btnnext{
+.btnnext {
   position: absolute;
-  top: 400px;
+  top: 450px;
   right: 10px;
 }
-.btnpreview{
+.btnpreview {
   position: absolute;
-  top: 400px;
+  top: 450px;
   left: 10px;
 }
 
 @media (max-width: 810px) {
-  .container-principal{
+  .container-principal {
     margin-top: 20px;
-    /* padding: 60px 60px 20px; */
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 60px;
     padding-bottom: 0px;
     align-items: center;
     min-height: 2vh;
+  }
 
-}
-
-.btns{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  padding-bottom: 20px;
-  
-}
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 600px) {
- 
-  .text-btn{
+  .text-btn {
+    width: 90px;
+    height: 90px;
+  }
+  .text-btn > img {
     width: 100px;
-    height: 100px;
+  }
+  .imgbg {
+    width: 280px;
+  }
+  .imgbg > img {
+    margin-top: 0px;
+    padding: 0px;
+    position: absolute;
+    z-index: -1;
+    width: 280px;
+  }
+  .imgMeio {
+    margin-bottom: 60px;
+    width: 100px;
+  }
+  .imgMeio > img {
+    width: 100px;
+  }
 }
-.text-btn > img{
-  width: 110px;
-}
-.imgbg{
-  width: 300px;
-}
-.imgbg > img{
-  margin-top: 0px;
-  padding: 0px;
-  position: absolute;
-  z-index: -1;
-  width: 300px;
-  
-}
-.imgMeio{
-  margin-bottom: 60px;
-  width: 100px;
-}
-.imgMeio > img{
-  width: 100px;
-}
-
+@media (max-width: 360px) {
+  .text-btn {
+    width: 80px;
+    height: 80px;
+  }
+  .text-btn > img {
+    width: 90px;
+  }
+ 
+  .imgMeio {
+    margin-bottom: 100px;
+    width: 80px;
+  }
+  .imgMeio > img {
+    width: 80px;
+  }
+  video{
+    width: 350px;
+  }
 }
